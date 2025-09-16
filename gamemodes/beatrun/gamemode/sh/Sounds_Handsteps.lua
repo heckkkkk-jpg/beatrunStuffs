@@ -33,3 +33,21 @@ sound.Add({
 	pitch = {75, 90},
 	sound = {"mirrorsedge/Handsteps/Concrete/ConcreteHandStepFastRelease_01.wav", "mirrorsedge/Handsteps/Concrete/ConcreteHandStepFastRelease_02.wav", "mirrorsedge/Handsteps/Concrete/ConcreteHandStepFastRelease_03.wav"}
 })
+
+sound.Add({
+	name = "Handsteps.MetalPipeHard",
+	volume = 1,
+	level = 60,
+	channel = CHAN_STATIC,
+	pitch = {90, 110},
+	sound = {"mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard1.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard2.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard3.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard4.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard5.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard6.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard7.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard8.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard9.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_HandStepHard10.wav"}
+})
+
+sound.Add({
+	name = "Handsteps.MetalPipeRelease",
+	volume = 1,
+	level = 60,
+	channel = CHAN_STATIC,
+	pitch = {90, 110},
+	sound = {"mirrorsedge/Handsteps/Metal/MetalPipeSwing_Release1.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_Release2.wav", "mirrorsedge/Handsteps/Metal/MetalPipeSwing_Release3.wav"}
+})

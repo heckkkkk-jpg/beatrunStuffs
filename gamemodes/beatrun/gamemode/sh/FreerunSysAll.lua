@@ -110,7 +110,7 @@ hook.Add("PlayerFootstep", "MEStepSound", function(ply, pos, foot, sound, volume
 
 	ply.FootstepReleaseLand = true
 
-	if CLIENT or game.SinglePlayer() and not ply:Crouching() then
+	if CLIENT or game.SinglePlayer() and not ply:Crouching() or IsValid(ply:GetBalanceEntity()) then
 		ply:EmitSound("Footsteps." .. newsound)
 		ply:EmitSound("Cloth.MovementRun")
 
@@ -122,13 +122,17 @@ hook.Add("PlayerFootstep", "MEStepSound", function(ply, pos, foot, sound, volume
 	ply.LastFootstepSound = mat
 
 	if not ply:Crouching() and ply:WaterLevel() > 0 then
-		ply:EmitSound("Footsteps.Water")
+	ply:EmitSound("Footsteps.Water")
 	elseif ply:Crouching() and ply:WaterLevel() > 0 then
 	ply:EmitSound("Sneak.Water")
 	end
 
+	if IsValid(ply:GetBalanceEntity()) then -- works about fine but needs adjustments.
+	ply:EmitSound("Footsteps.MetalPipe")
+  end
+
 	if ply:InOverdrive() and ply:GetVelocity():Length() > 400 then
-		ply:EmitSound("Footsteps.Spark")
+	ply:EmitSound("Footsteps.Spark")
 	end
 
 	if (CLIENT and IsFirstTimePredicted() or game.SinglePlayer()) and ply:Crouching() then

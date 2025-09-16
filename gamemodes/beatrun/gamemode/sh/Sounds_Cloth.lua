@@ -22,7 +22,7 @@ sound.Add({
 	level = 30,
 	channel = CHAN_STATIC,
 	pitch = {90, 110},
-	sound = {"mirrorsedge/Cloth_Movement_Walk_01.wav", "mirrorsedge/Cloth_Movement_Walk_02.wav", "mirrorsedge/Cloth_Movement_Walk_03.wav", "mirrorsedge/Cloth_Movement_Walk_04.wav", "mirrorsedge/Cloth_Movement_Walk_05.wav", "mirrorsedge/Cloth_Movement_Walk_06.wav", "mirrorsedge/Cloth_Movement_Walk_07.wav", "mirrorsedge/Cloth_Movement_Walk_08.wav"}
+	sound = {"mirrorsedge/Cloth/Cloth_Movement_Walk_01.wav", "mirrorsedge/Cloth/Cloth_Movement_Walk_02.wav", "mirrorsedge/Cloth/Cloth_Movement_Walk_03.wav", "mirrorsedge/Cloth/Cloth_Movement_Walk_04.wav", "mirrorsedge/Cloth/Cloth_Movement_Walk_05.wav", "mirrorsedge/Cloth/Cloth_Movement_Walk_06.wav", "mirrorsedge/Cloth/Cloth_Movement_Walk_07.wav", "mirrorsedge/Cloth/Cloth_Movement_Walk_08.wav"}
 })
 
 sound.Add({
@@ -31,7 +31,7 @@ sound.Add({
 	level = 30,
 	channel = CHAN_STATIC,
 	pitch = {90, 110},
-	sound = {"mirrorsedge/Cloth_Movement_Sneak_01.wav", "mirrorsedge/Cloth_Movement_Sneak_02.wav", "mirrorsedge/Cloth_Movement_Sneak_03.wav", "mirrorsedge/Cloth_Movement_Sneak_04.wav", "mirrorsedge/Cloth_Movement_Sneak_05.wav", "mirrorsedge/Cloth_Movement_Sneak_06.wav", "mirrorsedge/Cloth_Movement_Sneak_07.wav", "mirrorsedge/Cloth_Movement_Sneak_08.wav"}
+	sound = {"mirrorsedge/Cloth/Cloth_Movement_Sneak_01.wav", "mirrorsedge/Cloth/Cloth_Movement_Sneak_02.wav", "mirrorsedge/Cloth/Cloth_Movement_Sneak_03.wav", "mirrorsedge/Cloth/Cloth_Movement_Sneak_04.wav", "mirrorsedge/Cloth/Cloth_Movement_Sneak_05.wav", "mirrorsedge/Cloth/Cloth_Movement_Sneak_06.wav", "mirrorsedge/Cloth/Cloth_Movement_Sneak_07.wav", "mirrorsedge/Cloth/Cloth_Movement_Sneak_08.wav"}
 })
 
 sound.Add({
@@ -59,4 +59,31 @@ sound.Add({
 	channel = CHAN_STATIC,
 	pitch = {90, 110},
 	sound = {"mirrorsedge/Cloth/BF_Short_Hard_1a.wav", "mirrorsedge/Cloth/BF_Short_Hard_1b.wav", "mirrorsedge/Cloth/BF_Short_Hard_1c.wav", "mirrorsedge/Cloth/BF_Short_Hard_1d.wav", "mirrorsedge/Cloth/BF_Short_Hard_1e.wav", "mirrorsedge/Cloth/BF_Short_Hard_1f.wav"}
+})
+
+sound.Add({
+	name = "Cloth.Fall",
+	volume = 0.75,
+	level = 75,
+	channel = CHAN_STATIC,
+	pitch = {90, 110},
+	sound = {"mirrorsedge/Cloth/Body_Fall_Cloth1.wav", "mirrorsedge/Cloth/Body_Fall_Cloth2.wav", "mirrorsedge/Cloth/Body_Fall_Cloth3.wav", "mirrorsedge/Cloth/Body_Fall_Cloth4.wav"}
+})
+
+sound.Add({
+	name = "Cloth.BodyRoll",
+	volume = 0.75,
+	level = 75,
+	channel = CHAN_STATIC,
+	pitch = {90, 110},
+	sound = {"mirrorsedge/Cloth/Body_Roll_Cloth1.wav", "mirrorsedge/Cloth/Body_Roll_Cloth2.wav", "mirrorsedge/Cloth/Body_Roll_Cloth3.wav", "mirrorsedge/Cloth/Body_Roll_Cloth4.wav"}
+})
+
+sound.Add({
+	name = "Cloth.BodyRollSwish",
+	volume = 1,
+	level = 42,
+	channel = CHAN_STATIC,
+	pitch = {90, 110},
+	sound = {"mirrorsedge/Cloth/ME_Faith_Cloth_Roll_Swish1.wav", "mirrorsedge/Cloth/ME_Faith_Cloth_Roll_Swish2.wav", "mirrorsedge/Cloth/ME_Faith_Cloth_Roll_Swish3.wav", "mirrorsedge/Cloth/ME_Faith_Cloth_Roll_Swish4.wav", "mirrorsedge/Cloth/ME_Faith_Cloth_Roll_Swish5.wav", "mirrorsedge/Cloth/ME_Faith_Cloth_Roll_Swish6.wav", "mirrorsedge/Cloth/ME_Faith_Cloth_Roll_Swish7.wav"}
 })

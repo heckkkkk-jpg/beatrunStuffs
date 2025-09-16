@@ -158,6 +158,7 @@ hook.Add("SetupMove", "EvadeRoll", function(ply, mv, cmd)
 
 		if SERVER and not land then
 			ply:EmitSound("Cloth.Roll")
+			ply:EmitSound("Cloth.BodyRollSwish")
 			ply:EmitSound("Cloth.RollLand")
 		elseif CLIENT and IsFirstTimePredicted() or game.SinglePlayer() then
 			ply:EmitSound("Handsteps.ConcreteHard")
@@ -233,6 +234,7 @@ hook.Add("OnPlayerHitGround", "SafetyRoll", function(ply, water, floater, speed)
 		if SERVER and not land then
 			ply:EmitSound("Cloth.Roll")
 			ply:EmitSound("Cloth.RollLand")
+			ply:EmitSound("Cloth.BodyRollSwish")
 		elseif CLIENT and IsFirstTimePredicted() or game.SinglePlayer() then
 			ply:EmitSound("Handsteps.ConcreteHard")
 			ply:EmitSound("Land.Concrete")

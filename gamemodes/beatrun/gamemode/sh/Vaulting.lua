@@ -751,8 +751,10 @@ hook.Add("SetupMove", "BeatrunVaulting", function(ply, mv, cmd)
 						ply:EmitSound("Cloth.VaultSwish")
 					end
 
-					if ply.MantleMatType == 77 or ply.MantleMatType == 86 then
-						ply:EmitSound("Metal.Ringout")
+					if ply.MantleMatType == 77 then
+					ply:EmitSound("Metal.Ringout")
+				  elseif ply.MantleMatType == 86 then
+					ply:EmitSound("Duct.Ringout")
 					end
 
 					hook.Run("PlayerFootstep", ply, mv:GetOrigin(), 1, "Footsteps.Concrete", 1)

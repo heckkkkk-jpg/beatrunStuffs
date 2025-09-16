@@ -1,6 +1,6 @@
 ENT.Type = "anim"
 ENT.Base = "base_entity"
-ENT.PrintName = "Balancing beam"
+ENT.PrintName = "Balancing Beam"
 ENT.Author = ""
 ENT.Category = "Beatrun"
 
@@ -56,7 +56,7 @@ function ENT:Initialize()
 		self.CLModel = ClientsideModel(self.Model)
 		self.CLModel:SetPos(self:GetPos())
 		self.CLModel:SetAngles(ang)
-		self.CLModel:SetMaterial("medge/redbrickvertex")
+		--self.CLModel:SetMaterial("medge/redbrickvertex")
 	end
 
 	self:SetPos(self:GetPos() - ang:Forward() * 10)
@@ -96,7 +96,7 @@ function ENT:Think()
 			self.CLModel = ClientsideModel(self.Model)
 			self.CLModel:SetPos(self:GetPos())
 			self.CLModel:SetAngles(self:GetAngles())
-			self.CLModel:SetMaterial("medge/redbrickvertex")
+			--self.CLModel:SetMaterial("medge/redbrickvertex")
 		end
 
 		if IsValid(physobj) then
@@ -143,7 +143,7 @@ function ENT:Draw()
 		self.CLModel = ClientsideModel(self.Model)
 		self.CLModel:SetPos(pos)
 		self.CLModel:SetAngles(ang)
-		self.CLModel:SetMaterial("medge/redbrickvertex")
+		--self.CLModel:SetMaterial("medge/redbrickvertex")
 	end
 
 	self:SetRenderBounds(mins, maxs)

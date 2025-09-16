@@ -38,7 +38,7 @@ function ENT:Initialize()
 	end
 
 	-- self:SetRenderOrigin(self:GetPos() - self:GetAngles():Forward() * 15)
-	self:SetMaterial("medge/redbrickvertex")
+	--self:SetMaterial("medge/redbrickvertex")
 	self.NoPlayerCollisions = true
 	-- local mins, maxs = self:GetCollisionBounds() * 4
 
@@ -68,6 +68,6 @@ end
 
 function ENT:Draw()
 	self:DrawModel()
-	-- local mins, maxs = self:GetCollisionBounds()
-	-- render.DrawWireframeBox(self:GetPos(), self:GetAngles(), mins, maxs)
+	local mins, maxs = self:GetCollisionBounds()
+	render.DrawWireframeBox(self:GetPos(), self:GetAngles(), mins, maxs)
 end
