@@ -93,6 +93,7 @@ hook.Add("SetupMove", "Balance", function(ply, mv, cmd)
 
 		local out = ply.BalanceTraceOut
 
+		if out.Entity ~= balance and not out.Entity:IsPlayer() or distlen < 25 or distend < distlen + 30 or math.abs(ply:GetBalance()) >= 100 then
 			ParkourEvent("fall", ply)
 
 			if math.abs(ply:GetBalance()) >= 100 then
@@ -158,6 +159,7 @@ local attack2 = false
 hook.Add("CreateMove", "Balance", function(cmd)
 	local ply = LocalPlayer()
 
+	if IsValid(ply:GetBalanceEntity()) and IsValid(BodyAnim) then
 		local ang = cmd:GetViewAngles()
 		local bang = dircache or ply:GetBalanceEntity():GetAngles()
 
@@ -228,3 +230,4 @@ hook.Add("CreateMove", "Balance", function(cmd)
 		lockang2 = false
 		dircache = nil
 	end
+end)
